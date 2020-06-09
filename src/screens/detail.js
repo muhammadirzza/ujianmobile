@@ -21,7 +21,7 @@ const Detail = ({navigation, route, imageAction}) => {
                 style={{width: '100%', height: 300, marginBottom:40}}
             />
             <Button 
-                title="SET AS DEFAULT PICTURE?"
+                title="SET AS DISPLAY PICTURE?"
                 containerStyle={{
                     alignItems: 'center'
                 }}
