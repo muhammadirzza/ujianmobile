@@ -4,6 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Homestackroot from '../navigations/homeStackroot';
 import {Text} from 'react-native'
 import Profile from '../screens/profile';
+import Drawer from '../navigations/myDrawer'
 import Ionicons from 'react-native-vector-icons/FontAwesome';
 
 
@@ -36,7 +37,7 @@ export default () => {
         >
             
             <Tab.Screen name='Home' component={Homestackroot}/>
-            <Tab.Screen name='Profile' component={Profile}/>
+            <Tab.Screen name='Profile' component={Drawer}/>
         </Tab.Navigator>
     )
 }

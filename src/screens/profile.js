@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux';
 
 const Profile = (props) => {        //props route ini didapat dari homestack.screen
     let image = useSelector(state => state.Auth.image)
+    
 
     return (
         <View style={styles.container}>

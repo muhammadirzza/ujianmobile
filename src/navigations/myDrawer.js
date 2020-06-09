@@ -1,7 +1,8 @@
 import 'react-native-gesture-handler';
 import React from 'react'
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import TabNav from './bottomTab';
+// import TabNav from './bottomTab';
+import Profile from '../screens/profile'
 import Setting from '../screens/setting'
 import { View, Text, Button } from 'react-native';
 
@@ -20,13 +21,13 @@ const MyDrawer = () => {
         },
         })}
         drawerContentOptions={{
-          activeBackgroundColor:'gray',
-          inactiveBackgroundColor:'transparent',
+          // activeBackgroundColor:'gray',
+          // inactiveBackgroundColor:'transparent',
           activeTintColor:'#3DDC84',
           inactiveTintColor:'gray'
         }}
       >
-        <Drawer.Screen name='Profile' component={TabNav}/>
+        <Drawer.Screen name='Profile' component={Profile}/>
         <Drawer.Screen name='Setting' component={Setting} />
       </Drawer.Navigator>
     )

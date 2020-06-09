@@ -1,7 +1,7 @@
 import 'react-native-gesture-handler';
 import React,{useState,useEffect} from 'react'
 import {NavigationContainer} from '@react-navigation/native'
-import DrawerNav from './src/navigations/myDrawer'
+import TabNav from './src/navigations/bottomTab'
 import AuthStack from './src/navigations/authStack'
 import {connect} from 'react-redux'
 import {View,StyleSheet} from 'react-native'
@@ -48,7 +48,7 @@ const Appinit=(props)=>{
         <NavigationContainer>
             {
                 props.Auth.username?
-                <DrawerNav/>
+                <TabNav/>
                 :
                 <AuthStack/>           
             }
