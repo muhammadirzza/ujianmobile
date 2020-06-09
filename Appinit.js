@@ -20,26 +20,6 @@ const Appinit=(props)=>{
 
     const [loading,setloading]=useState(true)
 
-    // const fechdata= async()=>{
-    //     try {
-    //         const token=await AsyncStorage.getItem('username')
-    //         const options = {
-    //             headers: {
-    //                 'Authorization': `Bearer ${token}`
-    //             }
-    //         }
-    //         Axios.post(`${API_URL}/user/keeplogin`, null, options)
-    //         .then((res) => {
-    //             props.alreadyLogin(res.data);
-    //         }).catch((err) => {
-    //             props.NotLoginYet();
-    //         }).finally(()=>{
-    //             setloading(false)
-    //         })
-    //     } catch (error) {
-    //         console.log(error)
-    //     }
-    // }
     useEffect(()=>{
         AsyncStorage.getItem('username')
         .then((res)=>{
@@ -64,8 +44,6 @@ const Appinit=(props)=>{
         )
     }
 
-
-    // const Auth=useSelector(state=>state.Auth)
     return(
         <NavigationContainer>
             {

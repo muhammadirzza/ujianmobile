@@ -8,7 +8,7 @@ import { FlatList, View, Image } from 'react-native';
 function HomeScreen({ route, navigation }) {            
     let dataKucing = useSelector(state => state.Auth.dataKucing);
     let dispatch = useDispatch();
-    console.log(dataKucing)
+    // console.log(dataKucing)
 
     useEffect(() =>{
         dispatch(getData())

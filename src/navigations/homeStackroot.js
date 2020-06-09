@@ -3,7 +3,6 @@ import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from '../screens/home';
 import Details from '../screens/detail';
-import { Button } from 'react-native';
 
 
 const HomeStack = createStackNavigator()
